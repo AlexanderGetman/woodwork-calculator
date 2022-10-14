@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<div>
+    <p>
+        Наименование изделия:
+        <select name="woodwork-type" id="woodwork-type">
+            <optgroup label="Евровагонка">
+                <option price="65" value="0.088">Евровагонка хвоя</option>
+                <option price="65" value="0.088">Евровагонка липа</option>
+                <option price="65" value="0.080">Евровагонка ольха (в т.ч. термо)</option>
+                <option price="65" value="0.090">Евровагонка канадский кедр</option>
+            </optgroup>
+            <optgroup label="Вагонка штиль">
+                <option price="65" value="0.115">Штиль 13 мм АВ</option>
+                <option price="65" value="0.110">Штиль 12,5 мм АВ</option>
+                <option price="65" value="0.135">Штиль 16 мм АВ</option>
+            </optgroup>
+            <optgroup label="Имитация бруса">
+                <option price="65" value="0.140">Имитация бруса 19 мм АВ и Эконом</option>
+                <option price="65" value="0.138">Имитация бруса 18 мм Люкс</option>
+                <option price="65" value="0.135">Имитация бруса 21 мм А</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>Длина изделия (в мм): <input id="lining-length-input" type="text"></p>
+    <p>Высота стены (в мм): <input id="wall-height-input" type="text"></p>
+    <p>Ширина стены (в мм): <input id="wall-width-input" type="text"></p>
+
+    <p>Имеются ли в стене окна/двери? <input type="checkbox" name="wall-opening" id="wall-opening-checkbox"></p>
+
+    <div class="wall-openings">
+        <p>Количество проемов в стене: <input id="opening-count" type="number" value="1" min="0"></p>
+    </div>
+
+    <div id="result-area">
+        <button type="button" name="count-button" id="count-button">Рассчитать</button>
+        <div id="result"></div>
+    </div>
+</div>
+<script src="script.js"></script>
